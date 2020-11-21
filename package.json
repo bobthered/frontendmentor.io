@@ -1,0 +1,25 @@
+{
+  "name": "frontendmentor.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobthered/frontendmentor.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobthered/frontendmentor.io/issues"
+  },
+  "homepage": "https://github.com/bobthered/frontendmentor.io#readme",
+  "devDependencies": {
+    "@bobthered/jest-markdown-reporter": "0.0.1",
+    "eslint": "^7.14.0",
+    "jest": "^26.6.3"
+  }
+}
