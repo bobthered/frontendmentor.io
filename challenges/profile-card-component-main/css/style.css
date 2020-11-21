@@ -1,7 +1,14 @@
+:root {
+  --color-primary-500: hsl(185, 75%, 39%);
+  --color-primary-800: hsl(229, 23%, 23%);
+  --color-primary-400: hsl(227, 10%, 46%);
+  --color-gray-300: hsl(0, 0%, 59%);
+  --color-gray-800: hsl(0, 0%, 12%);
+}
+
 @import './_fonts.css';
 @import './_reset.css';
 @import './_utilities.css';
-@import './_variables.css';
 @import './body.css';
 @import './card.css';
 @import './typography.css';
