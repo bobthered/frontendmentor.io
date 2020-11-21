@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+}
+.flex.align-center {
+  align-items: center;
+}
+.flex.align-end {
+  align-items: flex-end;
+}
+.flex.justify-center {
+  justify-content: center;
+}
+.flex.justify-end {
+  justify-content: flex-end;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.row {
+  flex-direction: row;
+}
+.flex.gap-1 {
+  gap: 0.5rem;
+}
+.flex.gap-2 {
+  gap: 1rem;
+}
+.flex.gap-4 {
+  gap: 2rem;
+}
+.padding-2 {
+  padding: 1rem;
+}
+.padding-3 {
+  padding: 1.5rem;
+}
+.padding-4 {
+  padding: 2rem;
+}
+.text-align-center {
+  text-align: center;
+}

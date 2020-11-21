@@ -2,4 +2,4 @@
 
 ### Description
 
-Solutions for website [frontendmentor.io](http://frontendmentor.io)
+Front end challenges from [frontendmentor.io](http://frontendmentor.io)
