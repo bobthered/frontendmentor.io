@@ -6,9 +6,9 @@
   --color-gray-800: hsl(0, 0%, 12%);
 }
 
-@import './_fonts.css';
-@import './_reset.css';
-@import './_utilities.css';
-@import './body.css';
-@import './card.css';
-@import './typography.css';
+@import '../css/_fonts.css';
+@import '../css/_reset.css';
+@import '../css/_utilities.css';
+@import '../css/body.css';
+@import '../css/card.css';
+@import '../css/typography.css';
