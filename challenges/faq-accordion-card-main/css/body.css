@@ -1,0 +1,4 @@
+body {
+  background-image: var(--bg-gradient);
+  height: 100vh;
+}

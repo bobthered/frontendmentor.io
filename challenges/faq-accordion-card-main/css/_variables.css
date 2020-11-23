@@ -1,0 +1,16 @@
+:root {
+  --color-white: #fff;
+  --color-soft-red: hsl(14, 88%, 65%);
+  --color-dark-blue: hsl(238, 29%, 16%);
+  --color-light-gray: hsl(240, 5%, 91%);
+  --color-mid-gray-blue: hsl(237, 12%, 33%);
+  --color-light-gray-blue: hsl(240, 6%, 50%);
+  --bg-gradient: linear-gradient(
+    180deg,
+    hsl(273, 75%, 66%) 0%,
+    hsl(240, 73%, 65%) 100%
+  );
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --transition: 0.2s;
+}

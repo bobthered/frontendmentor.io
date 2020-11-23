@@ -1,0 +1,23 @@
+.card {
+  background-color: var(--color-white);
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  border-radius: 2rem;
+  box-shadow: 0 5rem 5rem -2rem rgba(0, 0, 0, 0.3);
+  color: var(--color-dark-blue);
+  height: 100%;
+  max-width: 46rem;
+  padding: 11.5rem 2rem 0rem 2rem;
+  position: relative;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  .card {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: -46.8rem -25rem;
+    max-height: 43rem;
+    max-width: 80rem;
+    padding: 6rem 9.5rem 0 40rem;
+  }
+}

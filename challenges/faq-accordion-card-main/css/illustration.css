@@ -1,0 +1,35 @@
+.illustration {
+  background-image: url('../images/illustration-woman-online-mobile.svg');
+  background-size: cover;
+  height: 180px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -59.5%);
+  width: 243px;
+}
+.illustration .box {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .illustration {
+    background-image: url('../images/illustration-woman-online-desktop.svg');
+    background-position: right;
+    background-size: cover;
+    height: 359px;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 400px;
+  }
+  .illustration .box {
+    background-image: url('../images/illustration-box-desktop.svg');
+    height: 184px;
+    display: flex;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(-50%, 75%);
+    width: 191px;
+  }
+}
