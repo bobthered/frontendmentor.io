@@ -1,0 +1,46 @@
+body {
+  min-height: 100vh;
+  position: relative;
+}
+body:before {
+  background-image: url(../images/bg-pattern-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: '';
+  display: flex;
+  position: absolute;
+  height: 100vw;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+body:after {
+  background-image: url(../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+  content: '';
+  display: flex;
+  position: absolute;
+  height: 100vw;
+  right: 0;
+  width: 100vw;
+  z-index: -1;
+}
+@media (min-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  body:before {
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    height: calc(362 / 584 * 50vw);
+    width: 50vw;
+  }
+  body:after {
+    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+    height: calc(362 / 584 * 50vw);
+    width: 50vw;
+  }
+}

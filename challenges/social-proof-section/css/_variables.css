@@ -1,0 +1,8 @@
+:root {
+  --color-magenta: hsl(300, 43%, 22%);
+  --color-pink: hsl(333, 80%, 67%);
+  --color-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-white: hsl(0, 0%, 100%);
+  --transition: 0.2s;
+}

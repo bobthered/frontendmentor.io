@@ -1,0 +1,70 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-top: 1.5rem;
+}
+.testimonial {
+  background-color: var(--color-magenta);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  padding: 2.35rem 2rem 2rem 2rem;
+}
+.testimonials .header {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.81rem;
+  gap: 1.3rem;
+}
+.testimonial .avatar {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.testimonial img {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.testimonial .info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem 0 0 0;
+}
+.testimonial .info .name {
+  color: var(--color-white);
+  font-weight: 700;
+}
+.testimonial .info .verified {
+  color: var(--color-pink);
+  margin-left: 0.1rem;
+}
+.testimonial p {
+  color: var(--color-white);
+  font-size: 0.8rem;
+  letter-spacing: -0.08px;
+  line-height: 1.4rem;
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .testimonials {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 2.9rem;
+  }
+  .testimonial {
+    padding: 2.35rem 2rem 2.35rem 2rem;
+  }
+  .testimonials .testimonial:nth-child(2) {
+    margin-top: 1rem;
+  }
+  .testimonials .testimonial:nth-child(3) {
+    margin-top: 2rem;
+  }
+}

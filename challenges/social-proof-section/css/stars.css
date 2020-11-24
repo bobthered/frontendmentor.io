@@ -1,0 +1,10 @@
+.stars {
+  display: flex;
+  gap: 0.5rem;
+}
+.star {
+  background-image: url(../images/icon-star.svg);
+  display: flex;
+  height: 16px;
+  width: 17px;
+}

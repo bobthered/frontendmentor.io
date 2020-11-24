@@ -1,0 +1,15 @@
+main {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  padding: 5.1rem 1.5rem;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  main {
+    max-width: 1110px;
+    padding: 8.05rem 0;
+  }
+}
