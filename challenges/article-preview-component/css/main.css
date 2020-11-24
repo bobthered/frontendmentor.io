@@ -1,0 +1,13 @@
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 01.5rem;
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  main {
+  }
+}

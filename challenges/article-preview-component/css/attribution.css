@@ -1,0 +1,30 @@
+.attribution {
+  bottom: 0;
+  color: #fff;
+  padding: 2rem;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.attribution a {
+  position: relative;
+  text-decoration: none;
+}
+.attribution a:before {
+  background-color: hsl(273, 75%, 66%);
+  bottom: -0.25rem;
+  content: '';
+  height: 1px;
+  left: 0;
+  margin-left: 0rem;
+  padding: 0;
+  position: absolute;
+  transition: all var(--transition);
+  width: 100%;
+  z-index: -1;
+}
+.attribution a:hover:before {
+  height: calc(100% + 0.5rem);
+  margin-left: -0.25rem;
+  padding: 0 0.5rem;
+}

@@ -1,0 +1,171 @@
+.card {
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 2rem 2rem -1rem rgba(0, 0, 0, 0.1);
+  color: var(--color-dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.card .image {
+  height: 12.6rem;
+  position: relative;
+  overflow: hidden;
+}
+.card .image img {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.card .body .description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 2.3rem 2rem 0.6rem 2rem;
+}
+.card .body h2 {
+  font-size: 1.03rem;
+  line-height: 1.5rem;
+}
+.card p {
+  color: var(--color-dark-blue);
+  font-size: 0.829rem;
+  line-height: 1.3rem;
+}
+.card .footer {
+  padding: 1.25rem 2rem;
+  position: relative;
+}
+.card .footer .info {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.card .footer .info img {
+  border-radius: 50%;
+  width: 2.5rem;
+}
+.card .footer .info span {
+  font-weight: 700;
+  font-size: 0.829rem;
+}
+.card .footer .info p {
+  color: var(--color-grayish-blue);
+}
+.card .footer .social {
+  align-items: center;
+  background-color: var(--color-dark-grayish-blue);
+  color: var(--color-grayish-blue);
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  left: 0;
+  height: 100%;
+  padding: 0rem 2rem;
+  position: absolute;
+  transition: transform var(--transition);
+  transform: translateY(0%);
+  bottom: -100%;
+  width: 100%;
+}
+.card .footer .social span {
+  font-size: 0.8rem;
+  letter-spacing: 5px;
+}
+.card .footer .social .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.card .footer.flip .social {
+  transform: translateY(-100%);
+}
+.card .share {
+  align-items: center;
+  background-color: var(--color-light-grayish-blue);
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+  position: absolute;
+  right: 2rem;
+  width: 2rem;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: background-color var(--transition), box-shadow var(--transition);
+}
+.card .share:hover {
+  box-shadow: 0 0 0 2px var(--color-dark-grayish-blue);
+  cursor: pointer;
+}
+.card .share:focus {
+  outline: none;
+}
+.card .footer .share svg path {
+  transition: fill var(--transition);
+}
+.card .footer .share * {
+  pointer-events: none;
+}
+.card .footer.flip .share {
+  background-color: var(--color-dark-blue);
+}
+.card .footer.flip .share svg path {
+  fill: #fff;
+}
+@media (min-width: 1200px) {
+  .card {
+    flex-direction: row;
+    height: 17.5rem;
+    overflow: visible;
+    width: 45.6rem;
+  }
+  .card .image {
+    border-bottom-left-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    height: 100%;
+    flex-grow: 0;
+    width: 46rem;
+  }
+  .card .image img {
+    width: 150%;
+  }
+  .card .body .description {
+    padding: 2rem 1.8rem 00rem 1.8rem;
+  }
+  .card .body h2 {
+    font-size: 1.285rem;
+    line-height: 1.75rem;
+  }
+  .card .footer {
+    padding: 1.25rem 2rem 2rem 2rem;
+  }
+  .card .footer .social {
+    border-radius: 0.25rem;
+    box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.3);
+    bottom: 5rem;
+    height: auto;
+    left: auto;
+    padding: 1rem;
+    right: -3.4rem;
+    transform: scale(0);
+    width: auto;
+  }
+  .card .footer .social:after {
+    background-color: var(--color-dark-grayish-blue);
+    left: 50%;
+    bottom: -1rem;
+    content: '';
+    display: flex;
+    height: 1rem;
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 1rem;
+  }
+  .card .footer.flip .social {
+    transform: scale(1);
+  }
+}

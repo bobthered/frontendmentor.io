@@ -1,0 +1,8 @@
+:root {
+  --color-dark-grayish-blue: hsl(217, 19%, 35%);
+  --color-dark-blue: hsl(214, 17%, 51%);
+  --color-grayish-blue: hsl(212, 23%, 69%);
+  --color-light-grayish-blue: hsl(210, 46%, 95%);
+  --color-white: #fff;
+  --transition: 0.2s;
+}
