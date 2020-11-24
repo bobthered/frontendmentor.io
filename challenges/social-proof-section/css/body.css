@@ -1,6 +1,7 @@
 body {
   min-height: 100vh;
   position: relative;
+  width: 100vw;
 }
 body:before {
   background-image: url(../images/bg-pattern-top-mobile.svg);
