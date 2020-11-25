@@ -1,0 +1,264 @@
+.player,
+.computer {
+  height: 11rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -70%);
+  transition: transform var(--transition);
+  width: 11rem;
+}
+main[mode='advanced'] .player {
+  transform: translate(-50%, -50%);
+}
+.player:before {
+  background-image: url(../images/bg-triangle.svg);
+  background-size: contain;
+  content: '';
+  display: block;
+  height: calc(13rem * 277 / 305);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -33%);
+  transition: transform var(--transition);
+  width: 13rem;
+}
+main[mode='advanced'] .player:before {
+  background-image: url(../images/bg-pentagon.svg);
+  height: calc(13rem * 313 / 329);
+  transform: translate(-50%, -50%);
+}
+.player p,
+.computer p {
+  bottom: -2rem;
+  color: var(--color-white);
+  left: 50%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  transition: all var(--transition);
+  width: 100%;
+}
+button.choice {
+  border: none;
+  border-radius: 50%;
+  box-shadow: none;
+  height: 8rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  transition: transform var(--transition),
+    opacity calc(var(--transition) * 0.25);
+  width: 8rem;
+}
+button.choice:before {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1rem rgba(255, 255, 255, 0.025),
+    0 0 0 2.5rem rgba(255, 255, 255, 0.025),
+    0 0 0 4.5rem rgba(255, 255, 255, 0.025);
+  content: '';
+  display: flex;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform var(--transition);
+  width: 100%;
+}
+button.choice:after {
+  background-color: var(--color-white);
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 6px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  content: '';
+  display: flex;
+  height: 80%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+button.choice:hover {
+  cursor: pointer;
+}
+button.choice:focus:before,
+button.choice:hover:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+button.choice.paper {
+  background: var(--gradient-paper);
+  box-shadow: var(--box-shadow-paper);
+}
+button.choice.paper:after {
+  background-image: url(../images/icon-paper.svg);
+}
+button.choice.scissors {
+  background: var(--gradient-scissors);
+  box-shadow: var(--box-shadow-scissors);
+}
+button.choice.scissors:after {
+  background-image: url(../images/icon-scissors.svg);
+}
+button.choice.rock {
+  background: var(--gradient-rock);
+  box-shadow: var(--box-shadow-rock);
+}
+button.choice.rock:after {
+  background-image: url(../images/icon-rock.svg);
+}
+button.choice.lizard {
+  background: var(--gradient-lizard);
+  box-shadow: var(--box-shadow-lizard);
+}
+button.choice.lizard:after {
+  background-image: url(../images/icon-lizard.svg);
+}
+button.choice.spock {
+  background: var(--gradient-spock);
+  box-shadow: var(--box-shadow-spock);
+}
+button.choice.spock:after {
+  background-image: url(../images/icon-spock.svg);
+}
+main[mode='classic'] button.choice.lizard,
+main[mode='classic'] button.choice.spock {
+  opacity: 0;
+  pointer-events: none;
+}
+.player button.choice.paper {
+  transform: translate(-50%, -50%) rotate(-60deg) translate(0, -85%)
+    rotate(60deg);
+}
+main[mode='advanced'] .player button.choice.paper {
+  transform: translate(-50%, -50%) rotate(72deg) translate(0, -85%)
+    rotate(-72deg) scale(0.75);
+}
+.player button.choice.scissors {
+  transform: translate(-50%, -50%) rotate(60deg) translate(0, -85%)
+    rotate(-60deg);
+}
+main[mode='advanced'] .player button.choice.scissors {
+  transform: translate(-50%, -50%) rotate(0deg) translate(0, -85%) rotate(0deg)
+    scale(0.75);
+}
+.player button.choice.rock {
+  transform: translate(-50%, -50%) rotate(180deg) translate(0, -85%)
+    rotate(-180deg);
+}
+main[mode='advanced'] .player button.choice.rock {
+  transform: translate(-50%, -50%) rotate(144deg) translate(0, -85%)
+    rotate(-144deg) scale(0.75);
+}
+.player button.choice.lizard {
+  transform: translate(-50%, -50%) rotate(180deg) translate(0, -85%)
+    rotate(-180deg);
+}
+main[mode='advanced'] .player button.choice.lizard {
+  transform: translate(-50%, -50%) rotate(-144deg) translate(0, -85%)
+    rotate(144deg) scale(0.75);
+}
+.player button.choice.spock {
+  transform: translate(-50%, -50%) rotate(180deg) translate(0, -85%)
+    rotate(-180deg);
+}
+main[mode='advanced'] .player button.choice.spock {
+  transform: translate(-50%, -50%) rotate(-72deg) translate(0, -85%)
+    rotate(72deg) scale(0.75);
+}
+.computer {
+  pointer-events: none;
+  transform: translate(0%, -100%);
+}
+.computer:before {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  content: '';
+  display: flex;
+  height: 8rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform var(--transition);
+  width: 8rem;
+}
+.computer button.choice {
+  opacity: 0;
+  transition: transform var(--transition);
+}
+main[step='2'] .player,
+main[step='3'] .player {
+  transform: translate(-100%, -100%);
+}
+main[step='2'] .player:before,
+main[step='3'] .player:before {
+  transform: translate(-50%, -33%) scale(0);
+}
+main[step='2'] .player p,
+main[step='2'] .computer p,
+main[step='3'] .player p,
+main[step='3'] .computer p {
+  opacity: 1;
+}
+main[step='2'] .player button.choice.rock,
+main[step='3'] .player button.choice.rock,
+main[step='2'] .player button.choice.paper,
+main[step='3'] .player button.choice.paper,
+main[step='2'] .player button.choice.scissors,
+main[step='3'] .player button.choice.scissors,
+main[step='2'] .player button.choice.lizard,
+main[step='3'] .player button.choice.lizard,
+main[step='2'] .player button.choice.spock,
+main[step='3'] .player button.choice.spock {
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+main[step='2'] .player button.choice.selected,
+main[step='3'] .player button.choice.selected {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+main[step='2'] .computer:before,
+main[step='3'] .computer:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+main[step='2'] .computer button.choice.selected,
+main[step='3'] .computer button.choice.selected {
+  opacity: 1;
+}
+@media (min-width: 1200px) {
+  .player,
+  .computer {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  .computer {
+    transform: translate(50%, -35%) scale(2.25);
+  }
+  main[mode='advanced'] .player {
+    transform: translate(-50%, -20%) scale(1.5);
+  }
+  main[step='2'] .player {
+    transform: translate(-150%, -35%) scale(2.25);
+  }
+  main[step='3'] .player {
+    transform: translate(-220%, -35%) scale(2.25);
+  }
+  main[step='3'] .computer {
+    transform: translate(125%, -35%) scale(2.25);
+  }
+  .player p,
+  .computer p {
+    bottom: auto;
+    transform: translate(-50%, -50%) scale(0.75);
+    top: 0.5rem;
+  }
+}

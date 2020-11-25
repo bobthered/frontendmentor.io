@@ -1,0 +1,116 @@
+.modal-bg {
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  height: 100vh;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: opacity var(--transition);
+  width: 100vw;
+}
+.modal {
+  align-items: center;
+  background-color: var(--color-white);
+  bottom: -100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  padding: 2rem;
+  position: absolute;
+  transition: transform var(--transition);
+  transform: translateY(0%);
+  width: 100%;
+}
+.modal.show {
+  transform: translateY(-100%);
+}
+.modal h1 {
+  color: var(--color-dark-text);
+}
+main[mode='classic'] .modal .rules-advanced,
+main[mode='advanced'] .modal .rules-classic {
+  display: none;
+}
+.modal button {
+  background-image: url(../images/icon-close.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: none;
+  height: 1.5rem;
+  padding: 1rem;
+  pointer-events: all;
+  width: 1.5rem;
+}
+.modal button:hover {
+  cursor: pointer;
+}
+.modal.options .model {
+  align-items: center;
+  color: var(--color-dark-text);
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+.modal.options .radios {
+  display: flex;
+  gap: 1rem;
+}
+.modal.options input {
+  height: 0;
+  pointer-events: all;
+  width: 0;
+}
+.modal.options label.radio span {
+  align-items: center;
+  background-color: var(--color-dark-text);
+  border-radius: 50%;
+  color: var(--color-white);
+  display: flex;
+  font-size: 1.5rem;
+  height: 8rem;
+  justify-content: center;
+  transition: all var(--transition);
+  width: 8rem;
+}
+.modal.options input:checked ~ span {
+  background-color: var(--color-white);
+  box-shadow: inset 0 0 0 0.25rem var(--color-dark-text);
+  color: var(--color-dark-text);
+}
+@media (min-width: 1200px) {
+  .modal {
+    align-items: flex-start;
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    bottom: auto;
+    gap: 3rem;
+    left: 50%;
+    height: auto;
+    opacity: 0;
+    padding: 2rem;
+    pointer-events: none;
+    transition: opacity var(--transition);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: auto;
+  }
+  .modal.show {
+    opacity: 1;
+    pointer-events: all;
+    transform: translate(-50%, -50%);
+  }
+  .modal button {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+  }
+  .modal-bg.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+}

@@ -1,0 +1,36 @@
+:root {
+  --gradient-scissors: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  --gradient-paper: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  --gradient-rock: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  --gradient-lizard: linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+  --gradient-spock: linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+  --gradient-background: radial-gradient(
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  --box-shadow-scissors: 0 1px 0 hsl(40, 84%, 40%), 0 2px 0 hsl(40, 84%, 40%),
+    0 3px 0 hsl(40, 84%, 40%), 0 4px 0 hsl(40, 84%, 40%),
+    0 5px 0 hsl(40, 84%, 40%), 0 6px 0 hsl(40, 84%, 40%),
+    0 10px 0.25rem rgba(0, 0, 0, 0.3);
+  --box-shadow-paper: 0 1px 0 hsl(230, 60%, 48%), 0 2px 0 hsl(230, 60%, 48%),
+    0 3px 0 hsl(230, 60%, 48%), 0 4px 0 hsl(230, 60%, 48%),
+    0 5px 0 hsl(230, 60%, 48%), 0 6px 0 hsl(230, 60%, 48%),
+    0 10px 0.25rem rgba(0, 0, 0, 0.3);
+  --box-shadow-rock: 0 1px 0 hsl(349, 70%, 40%), 0 2px 0 hsl(349, 70%, 40%),
+    0 3px 0 hsl(349, 70%, 40%), 0 4px 0 hsl(349, 70%, 40%),
+    0 5px 0 hsl(349, 70%, 40%), 0 6px 0 hsl(349, 70%, 40%),
+    0 10px 0.25rem rgba(0, 0, 0, 0.3);
+  --box-shadow-lizard: 0 1px 0 hsl(261, 72%, 40%), 0 2px 0 hsl(261, 72%, 40%),
+    0 3px 0 hsl(261, 72%, 40%), 0 4px 0 hsl(261, 72%, 40%),
+    0 5px 0 hsl(261, 72%, 40%), 0 6px 0 hsl(261, 72%, 40%),
+    0 10px 0.25rem rgba(0, 0, 0, 0.3);
+  --box-shadow-spock: 0 1px 0 hsl(189, 58%, 40%), 0 2px 0 hsl(189, 58%, 40%),
+    0 3px 0 hsl(189, 58%, 40%), 0 4px 0 hsl(189, 58%, 40%),
+    0 5px 0 hsl(189, 58%, 40%), 0 6px 0 hsl(189, 58%, 40%),
+    0 10px 0.25rem rgba(0, 0, 0, 0.3);
+  --color-dark-text: hsl(229, 25%, 31%);
+  --color-score-text: hsl(229, 64%, 46%);
+  --color-header-outline: hsl(217, 16%, 45%);
+  --color-white: #fff;
+  --transition: 2s;
+}

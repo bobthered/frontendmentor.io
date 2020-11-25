@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The classic rock paper scissors game ( with lizard and spock as well )."
+    />
+    <meta name="theme-color" content="#000000" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="./images/icons/icon-192x192.png" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <main mode="classic" step="1">
+      <div class="header">
+        <div class="title">
+          <div class="classic">ROCK<br />PAPER<br />SCISSORS</div>
+          <div class="advanced">
+            ROCK<br />PAPER<br />SCISSORS<br />LIZARD<br />SPOCK
+          </div>
+        </div>
+        <div class="score">
+          <span>SCORE</span>
+          <div class="value">0</div>
+        </div>
+      </div>
+      <div class="player">
+        <button class="choice rock" aria-label="Rock"></button>
+        <button class="choice paper" aria-label="Paper"></button>
+        <button class="choice scissors" aria-label="Scissors"></button>
+        <button class="choice lizard" aria-label="Lizard"></button>
+        <button class="choice spock" aria-label="Spock"></button>
+        <p>You Picked</p>
+      </div>
+      <div class="computer">
+        <button class="choice rock" aria-label="Rock"></button>
+        <button class="choice paper" aria-label="Paper"></button>
+        <button class="choice scissors" aria-label="Scissors"></button>
+        <button class="choice lizard" aria-label="Lizard"></button>
+        <button class="choice spock" aria-label="Spock"></button>
+        <p>The House Picked</p>
+      </div>
+      <div class="footer">
+        <div class="status">
+          <h1>You Win</h1>
+          <button class="play-again">Play Again</button>
+        </div>
+        <div class="buttons">
+          <button class="options">OPTIONS</button>
+          <button class="rules">RULES</button>
+        </div>
+      </div>
+      <div class="modal-bg"></div>
+      <div class="modal rules">
+        <h1>RULES</h1>
+        <img class="rules-classic" src="./images/image-rules.svg" alt="Rules" />
+        <img
+          class="rules-advanced"
+          src="./images/image-rules-bonus.svg"
+          alt="Rules - Bonus"
+        />
+        <button class="close" aria-label="Close"></button>
+      </div>
+      <div class="modal options">
+        <h1>OPTIONS</h1>
+        <div class="model">
+          <h2>Mode</h2>
+          <div class="radios">
+            <label class="radio">
+              <input type="radio" name="mode" value="classic" />
+              <span>Classic</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="mode" value="advanced" />
+              <span>Advanced</span>
+            </label>
+          </div>
+        </div>
+        <button class="close" aria-label="Close"></button>
+      </div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
