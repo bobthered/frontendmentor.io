@@ -1,0 +1,10 @@
+.card {
+  background-color: var(--light-color-very-light-gray);
+  border-radius: 0.25rem;
+  box-shadow: 0 2rem 2rem -2rem rgba(0, 0, 0, 0.3);
+  /* opacity: 0.5; */
+  width: 100%;
+}
+html.dark .card {
+  background-color: var(--dark-color-very-dark-desaturated-blue);
+}

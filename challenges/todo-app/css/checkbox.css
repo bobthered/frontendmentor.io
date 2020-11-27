@@ -1,0 +1,60 @@
+label.checkbox {
+  position: relative;
+}
+label.checkbox input {
+  height: 0px;
+  opacity: 0;
+  position: absolute;
+  width: 0px;
+}
+label.checkbox span {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--light-color-light-grayish-blue);
+  border-radius: 50%;
+  display: flex;
+  height: 1.25rem;
+  overflow: hidden;
+  position: relative;
+  transition: all var(--transition);
+  width: 1.25rem;
+}
+label.checkbox input:not([disabled]) ~ span:hover {
+  cursor: pointer;
+}
+label.checkbox span:before {
+  background: var(--gradient);
+  content: '';
+  display: block;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity var(--transition);
+  width: 100%;
+}
+label.checkbox span:after {
+  background-image: url(../images/icon-check.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all var(--transition);
+  transform: scale(5);
+  width: 100%;
+}
+label.checkbox input:checked ~ span:before {
+  opacity: 1;
+}
+label.checkbox input:checked ~ span:after {
+  opacity: 1;
+  transform: scale(1);
+}
+html.dark label.checkbox span {
+  box-shadow: inset 0 0 0 1px var(--dark-color-very-dark-grayish-blue);
+}

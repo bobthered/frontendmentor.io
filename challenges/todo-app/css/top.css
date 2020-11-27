@@ -1,0 +1,13 @@
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 375px) {
+  .top {
+    gap: 1.35rem;
+  }
+}

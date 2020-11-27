@@ -1,0 +1,47 @@
+body {
+  background-color: var(--light-color-very-light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+body:before {
+  background-image: url(../images/bg-mobile-light.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: calc(200 / 18 * 1rem);
+  width: 100%;
+}
+body:after {
+  background-image: url(../design/desktop-design-light.jpg);
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+html.dark body {
+  background-color: var(--dark-color-very-dark-blue);
+}
+html.dark body:before {
+  background-image: url(../images/bg-mobile-dark.jpg);
+}
+@media (min-width: 375px) {
+  body:before {
+    background-image: url(../images/bg-desktop-light.jpg);
+    height: calc(300 / 18 * 1rem);
+  }
+  html.dark body:before {
+    background-image: url(../images/bg-desktop-dark.jpg);
+  }
+}

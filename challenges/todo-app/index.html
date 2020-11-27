@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="PWA Todo List" />
+    <meta name="theme-color" content="#000000" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="./images/icons/icon-192x192.png" />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" type="module" defer></script>
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <header>
+          <h1>Todo</h1>
+          <button class="mode" aria-label="Dark Mode"></button>
+        </header>
+        <form class="card">
+          <div class="item">
+            <!-- <label class="checkbox">
+              <input type="checkbox" disabled />
+              <span></span>
+            </label> -->
+            <input type="text" placeholder="Create a new todo..." />
+          </div>
+        </form>
+        <div class="card items-container">
+          <div class="items">
+            <template>
+              <div class="item">
+                <div class="handle">
+                  <svg
+                    width="14"
+                    height="23"
+                    viewBox="0 0 14 23"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5 2.75C5 3.99264 3.99264 5 2.75 5C1.50736 5 0.5 3.99264 0.5 2.75C0.5 1.50736 1.50736 0.5 2.75 0.5C3.99264 0.5 5 1.50736 5 2.75ZM5 20.75C5 21.9926 3.99264 23 2.75 23C1.50736 23 0.5 21.9926 0.5 20.75C0.5 19.5074 1.50736 18.5 2.75 18.5C3.99264 18.5 5 19.5074 5 20.75ZM11.75 5C12.9926 5 14 3.99264 14 2.75C14 1.50736 12.9926 0.5 11.75 0.5C10.5074 0.5 9.5 1.50736 9.5 2.75C9.5 3.99264 10.5074 5 11.75 5ZM14 20.75C14 21.9926 12.9926 23 11.75 23C10.5074 23 9.5 21.9926 9.5 20.75C9.5 19.5074 10.5074 18.5 11.75 18.5C12.9926 18.5 14 19.5074 14 20.75ZM11.75 14C12.9926 14 14 12.9926 14 11.75C14 10.5074 12.9926 9.5 11.75 9.5C10.5074 9.5 9.5 10.5074 9.5 11.75C9.5 12.9926 10.5074 14 11.75 14ZM5 11.75C5 12.9926 3.99264 14 2.75 14C1.50736 14 0.5 12.9926 0.5 11.75C0.5 10.5074 1.50736 9.5 2.75 9.5C3.99264 9.5 5 10.5074 5 11.75Z"
+                      fill="#D2D3DB"
+                    />
+                  </svg>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox" />
+                  <span></span>
+                </label>
+                <p></p>
+                <button class="close" aria-label="Remove Item"></button>
+              </div>
+            </template>
+          </div>
+          <div class="item total">
+            <p>0 items left</p>
+            <button class="clear hidden" aria-label="Clear Completed">
+              Clear Completed
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="card filter">
+          <button class="all" aria-label="All">All</button>
+          <button class="active" aria-label="Active">Active</button>
+          <button class="completed" aria-label="Completed">Completed</button>
+        </div>
+        <p>Drag and drop to reorder list</p>
+      </div>
+    </main>
+  </body>
+</html>

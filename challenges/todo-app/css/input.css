@@ -1,0 +1,27 @@
+input[type='text'] {
+  background-color: transparent;
+  border: none;
+  color: var(--light-color-very-dark-grayish-blue);
+  flex-grow: 1;
+  font-size: calc(12 / 18 * 1rem);
+  height: 2.65rem;
+  line-height: 2.65rem;
+}
+input[type='text']::placeholder {
+  color: var(--light-color-very-dark-grayish-blue);
+}
+input[type='text']:focus {
+  outline: none;
+}
+html.dark input[type='text'],
+html.dark input[type='text']::placeholder {
+  color: var(--dark-color-light-grayish-blue);
+}
+
+@media (min-width: 375px) {
+  input[type='text'] {
+    font-size: 1rem;
+    height: 3.5rem;
+    line-height: 3rem;
+  }
+}

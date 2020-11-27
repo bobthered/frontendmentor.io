@@ -1,0 +1,30 @@
+header {
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+header h1 {
+  letter-spacing: 0.55rem;
+  text-transform: uppercase;
+}
+header button {
+  background-color: transparent;
+  background-image: url(../images/icon-moon.svg);
+  border: none;
+  height: calc(26 / 18 * 1rem);
+  width: calc(26 / 18 * 1rem);
+}
+html.dark header button {
+  background-image: url(../images/icon-sun.svg);
+}
+
+@media (min-width: 375px) {
+  header {
+    margin-bottom: 0.9rem;
+  }
+  header h1 {
+    letter-spacing: 0.8rem;
+  }
+}

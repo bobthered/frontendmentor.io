@@ -1,0 +1,24 @@
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  height: 100vh;
+  justify-content: space-between;
+  padding: 2.65rem 1.35rem 1.35rem 1.35rem;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+}
+@media (min-width: 376px) {
+  main {
+    max-width: 32.75rem;
+  }
+}
+
+@media (min-width: 375px) {
+  main {
+    gap: 1.35rem;
+    padding: 4.35rem 1.35rem 1.35rem 1.35rem;
+  }
+}

@@ -1,0 +1,13 @@
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  width: 100%;
+}
+.footer p {
+  font-size: 0.75rem;
+}
+html.dark .footer p {
+  color: var(--dark-color-light-grayish-blue);
+}
