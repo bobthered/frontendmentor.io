@@ -24,12 +24,12 @@
 	>
 		<div class="bg-primary-500">
 			<img
-				src="/image-header-mobile.jpg"
+				src="./image-header-mobile.jpg"
 				alt="Header Image"
 				class="mix-blend-multiply object-cover w-full lg:hidden"
 			/>
 			<img
-				src="/image-header-desktop.jpg"
+				src="./image-header-desktop.jpg"
 				alt="Header Image"
 				class="hidden mix-blend-multiply object-cover w-full lg:block lg:h-full"
 			/>
