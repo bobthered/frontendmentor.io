@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Base Apparel Coming Soon Page - Frontendmentor.io</title>
+
+    <link rel="modulepreload" href="./_app/start-b7a07a86.js" />
+    <link rel="modulepreload" href="./_app/chunks/vendor-ffbf1bfb.js" />
+    <link rel="modulepreload" href="./_app/layout.svelte-33211241.js" />
+    <link rel="modulepreload" href="./_app/pages/index.svelte-2c2aac86.js" />
+    <link rel="stylesheet" href="./_app/assets/start-0826e215.css" />
+    <link
+      rel="stylesheet"
+      href="./_app/assets/pages/index.svelte-ac63d9bc.css"
+    />
+
+    <script type="module">
+      import { start } from './_app/start-b7a07a86.js';
+      start({
+        target: document.querySelector('#svelte'),
+        paths: { base: '', assets: '/.' },
+        session: {},
+        host: location.host,
+        route: true,
+        spa: false,
+        trailing_slash: 'never',
+        hydrate: {
+          status: 200,
+          error: null,
+          nodes: [
+            import('./_app/layout.svelte-33211241.js'),
+            import('./_app/pages/index.svelte-2c2aac86.js'),
+          ],
+          page: {
+            host: location.host, // TODO this is redundant
+            path: '/',
+            query: new URLSearchParams(''),
+            params: {},
+          },
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+      <main class="flex flex-col font-josefin-sans items-center">
+        <div
+          class="hidden fixed top-0 left-0 w-screen h-screen lg:block bg-cover"
+          style="background-image: url(./bg-pattern-desktop.svg); z-index: -1"
+        ></div>
+        <img
+          src="./hero-desktop.jpg"
+          class="hidden top-0 right-0 min-h-screen fixed lg:block"
+        />
+        <div class="flex flex-col lg:w-[1175px] lg:items-start">
+          <header class="px-8 py-8 lg:py-16">
+            <img class="w-[6.25rem] lg:w-[10rem]" src="./logo.svg" alt="Logo" />
+          </header>
+          <img src="./hero-mobile.jpg" class="lg:hidden" />
+          <div class="flex flex-col items-center px-8 py-[4rem] lg:items-start">
+            <div
+              class="flex flex-col text-[2.5rem] leading-[2.625rem] tracking-[.25em] uppercase text-center lg:text-left lg:text-[4.1rem] lg:leading-[4.25rem] lg:w-[20rem] lg:mt-[.5rem]"
+            >
+              <div class="font-light text-red-1">We&#39;re</div>
+              <div class="font-bold">Coming Soon</div>
+            </div>
+            <div
+              class="text-red-1 text-[.875rem] text-center mt-[1rem] lg:text-left lg:text-[1rem] lg:w-[27.75rem] lg:mt-[1.25rem] lg:leading-[1.75rem]"
+            >
+              Hello fellow shoppers! We&#39;re currently building our new
+              fashion store. Add your email below to stay up-to-date with
+              announcements and our launch deals.
+            </div>
+            <form
+              class="rounded-full ring ring-1 ring-red-1 w-full mt-[2.25rem] flex flex-row lg:mt-[2.6rem]"
+            >
+              <input
+                type="email"
+                class="flex-grow py-3 px-6 bg-transparent text-red-1 placeholder-red-1 placeholder-opacity-50 outline-none text-[.875rem] lg:px-[2rem] lg:py-[1rem]"
+                placeholder="Email Address"
+              />
+              <button
+                type="submit"
+                class="bg-gradient-to-r rounded-full px-6 from-gradient-from to-gradient-to lg:px-[2.7rem]"
+                style="box-shadow: 0 1rem 2rem 0 hsl(0, 36%, 70%)"
+              >
+                <img src="./icon-arrow.svg" alt="Arrow" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
