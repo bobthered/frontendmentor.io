@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Four Card Feature Section - Frontendmentor.io</title>
+
+    <link rel="modulepreload" href="./_app/start-d324eab9.js" />
+    <link rel="modulepreload" href="./_app/chunks/vendor-4e0cc74e.js" />
+    <link rel="modulepreload" href="./_app/layout.svelte-58e8e3d6.js" />
+    <link rel="modulepreload" href="./_app/pages/index.svelte-289f12ea.js" />
+    <link rel="stylesheet" href="./_app/assets/start-0826e215.css" />
+    <link
+      rel="stylesheet"
+      href="./_app/assets/pages/index.svelte-784c9875.css"
+    />
+
+    <script type="module">
+      import { start } from './_app/start-d324eab9.js';
+      start({
+        target: document.querySelector('#svelte'),
+        paths: { base: '', assets: '/.' },
+        session: {},
+        host: location.host,
+        route: true,
+        spa: false,
+        trailing_slash: 'never',
+        hydrate: {
+          status: 200,
+          error: null,
+          nodes: [
+            import('./_app/layout.svelte-58e8e3d6.js'),
+            import('./_app/pages/index.svelte-289f12ea.js'),
+          ],
+          page: {
+            host: location.host, // TODO this is redundant
+            path: '/',
+            query: new URLSearchParams(''),
+            params: {},
+          },
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+      <main
+        class="bg-gray-light flex flex-col px-[2rem] py-[5.25rem] text-blue-dark text-base items-center lg:py-[5rem]"
+      >
+        <div class="text-center font-light text-[1.5rem] lg:text-[2.28rem]">
+          Reliable, efficient delivery
+        </div>
+        <div
+          class="text-center font-bold text-[1.5rem] lg:text-[2.28rem] lg:leading-[2.75rem]"
+        >
+          Powered by Technology
+        </div>
+        <div
+          class="text-center mt-[1rem] leading-[1.6rem] text-blue-grayish font-light lg:w-[550px] lg:text-[.97rem] lg:mt-[1.25rem]"
+        >
+          Our Artificial intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </div>
+        <div
+          class="flex flex-col mt-[4.7rem] space-y-[1.75rem] lg:flex-row lg:space-y-0 lg:mt-[4rem] lg:w-[1110px] lg:items-center lg:space-x-[1.75rem]"
+        >
+          <div
+            class="rounded overflow-hidden bg-white shadow-lg flex flex-col lg:w-1/3"
+          >
+            <div class="h-[4px] w-full bg-cyan block"></div>
+            <div
+              class="px-[1.75rem] py-[1.5rem] flex flex-col lg:py-[1.75rem] lg:px-[2rem]"
+            >
+              <div class="font-bold text-[1.25rem]">Supervisor</div>
+              <div
+                class="text-[.83rem] leading-[1.5rem] min-h-[5rem] text-blue-grayish lg:mt-[.5rem] lg:min-h-[5.25rem]"
+              >
+                Monitors activity to identify project roadblocks
+              </div>
+              <img
+                class="w-[3.5rem] self-end lg:w-[4rem]"
+                src="./icon-supervisor.svg"
+              />
+            </div>
+          </div>
+          <div
+            class="flex flex-col space-y-[1.75rem] lg:w-1/3 lg:space-y-[2rem]"
+          >
+            <div
+              class="rounded overflow-hidden bg-white shadow-lg flex flex-col"
+            >
+              <div class="h-[4px] w-full bg-red block"></div>
+              <div
+                class="px-[1.75rem] py-[1.5rem] flex flex-col lg:py-[1.75rem] lg:px-[2rem]"
+              >
+                <div class="font-bold text-[1.25rem]">Team Builder</div>
+                <div
+                  class="text-[.83rem] leading-[1.5rem] min-h-[5rem] text-blue-grayish lg:mt-[.5rem] lg:min-h-[5.25rem]"
+                >
+                  Scans our talent network to create the optimal team for your
+                  project
+                </div>
+                <img
+                  class="w-[3.5rem] self-end lg:w-[4rem]"
+                  src="./icon-team-builder.svg"
+                />
+              </div>
+            </div>
+            <div
+              class="rounded overflow-hidden bg-white shadow-lg flex flex-col"
+            >
+              <div class="h-[4px] w-full bg-orange block"></div>
+              <div
+                class="px-[1.75rem] py-[1.5rem] flex flex-col lg:py-[1.75rem] lg:px-[2rem]"
+              >
+                <div class="font-bold text-[1.25rem]">Karma</div>
+                <div
+                  class="text-[.83rem] leading-[1.5rem] min-h-[5rem] text-blue-grayish lg:mt-[.5rem] lg:min-h-[5.25rem]"
+                >
+                  Regularly evaluates our talent to ensure quality
+                </div>
+                <img
+                  class="w-[3.5rem] self-end lg:w-[4rem]"
+                  src="./icon-karma.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="rounded overflow-hidden bg-white shadow-lg flex flex-col lg:w-1/3"
+          >
+            <div class="h-[4px] w-full bg-blue block"></div>
+            <div
+              class="px-[1.75rem] py-[1.5rem] flex flex-col lg:py-[1.75rem] lg:px-[2rem]"
+            >
+              <div class="font-bold text-[1.25rem]">Calculator</div>
+              <div
+                class="text-[.83rem] leading-[1.5rem] min-h-[5rem] text-blue-grayish lg:mt-[.5rem] lg:min-h-[5.25rem]"
+              >
+                Uses data from past projects to provide better delivery
+                estimates
+              </div>
+              <img
+                class="w-[3.5rem] self-end lg:w-[4rem]"
+                src="./icon-calculator.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
