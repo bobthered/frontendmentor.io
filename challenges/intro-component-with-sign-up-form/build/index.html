@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intro Component with Sign-Up Form - Frontendmentor.io</title>
+
+    <link rel="modulepreload" href="./_app/start-bbf80f54.js" />
+    <link rel="modulepreload" href="./_app/chunks/vendor-ffbf1bfb.js" />
+    <link rel="modulepreload" href="./_app/layout.svelte-7cf94192.js" />
+    <link rel="modulepreload" href="./_app/pages/index.svelte-1b08432a.js" />
+    <link rel="stylesheet" href="./_app/assets/start-0826e215.css" />
+    <link
+      rel="stylesheet"
+      href="./_app/assets/pages/index.svelte-fa7f25c1.css"
+    />
+
+    <script type="module">
+      import { start } from './_app/start-bbf80f54.js';
+      start({
+        target: document.querySelector('#svelte'),
+        paths: { base: '', assets: '/.' },
+        session: {},
+        host: location.host,
+        route: true,
+        spa: false,
+        trailing_slash: 'never',
+        hydrate: {
+          status: 200,
+          error: null,
+          nodes: [
+            import('./_app/layout.svelte-7cf94192.js'),
+            import('./_app/pages/index.svelte-1b08432a.js'),
+          ],
+          page: {
+            host: location.host, // TODO this is redundant
+            path: '/',
+            query: new URLSearchParams(''),
+            params: {},
+          },
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+      <div
+        class="fixed top-0 left-0 w-screen h-screen"
+        style="background-image: url(./design/desktop-design.jpg); z-index: -1"
+      ></div>
+      <main
+        class="bg-red flex flex-col p-6 font-base py-[5.75rem] min-h-screen opacity-100 lg:p-0 lg:items-center lg:justify-center"
+        style="background-image: url(./bg-intro-mobile.png)"
+      >
+        <div class="flex flex-col lg:w-[1110px] lg:flex-row lg:items-center">
+          <div class="flex flex-col">
+            <div
+              class="text-white font-bold text-center text-[1.75rem] leading-[2.25rem] lg:text-left lg:text-[3.08rem] lg:leading-[3.5rem]"
+            >
+              Learn to code by watching others
+            </div>
+            <div
+              class="text-white text-center mt-[1.4rem] leading-[1.625rem] lg:text-left lg:mt-[1.5rem] lg:pr-1"
+            >
+              See how experienced developers solve problems in real-time.
+              Watching scripted tutorials is great, but understanding how
+              developers think is invaluable.
+            </div>
+          </div>
+          <div class="flex flex-col lg:w-[1150px]">
+            <div
+              class="rounded-lg bg-blue text-white p-[1.25rem] leading-[1.4375rem] text-center mt-[4rem] text-[.9375rem] shadow lg:mt-0"
+            >
+              <span class="font-bold">Try it free 7 days</span> then<br
+                class="lg:hidden"
+              />
+              $20/mo. thereafter
+            </div>
+            <form
+              class="rounded-lg bg-white p-[1.5rem] flex flex-col space-y-[1rem] shadow mt-[1.5rem] lg:p-[2.4375rem] lg:space-y-[1.25rem]"
+            >
+              <input
+                type="text"
+                placeholder="First Name"
+                class="font-bold rounded border border-gray-200 p-[1rem] text-[.9375rem] transition duration-200 text-gray-600 ring ring-0 ring-black ring-opacity-30 outline-none hover:placeholder-gray-600 focus:placeholder-gray-600 hover:border-gray-600 focus:border-gray-600 focus:ring lg:px-[2rem]"
+              />
+              <input
+                type="text"
+                placeholder="Last Name"
+                class="font-bold rounded border border-gray-200 p-[1rem] text-[.9375rem] transition duration-200 text-gray-600 ring ring-0 ring-black ring-opacity-30 outline-none hover:placeholder-gray-600 focus:placeholder-gray-600 hover:border-gray-600 focus:border-gray-600 focus:ring lg:px-[2rem]"
+              />
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="font-bold rounded border border-gray-200 p-[1rem] text-[.9375rem] transition duration-200 text-gray-600 ring ring-0 ring-black ring-opacity-30 outline-none hover:placeholder-gray-600 focus:placeholder-gray-600 hover:border-gray-600 focus:border-gray-600 focus:ring lg:px-[2rem]"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                class="font-bold rounded border border-gray-200 p-[1rem] text-[.9375rem] transition duration-200 text-gray-600 ring ring-0 ring-black ring-opacity-30 outline-none hover:placeholder-gray-600 focus:placeholder-gray-600 hover:border-gray-600 focus:border-gray-600 focus:ring lg:px-[2rem]"
+              />
+              <button
+                type="submit"
+                class="font-bold text-white rounded bg-green text-center uppercase p-[1rem] transition duration-200 outline-none"
+                style="box-shadow: inset 0 -0.25rem 0 rgba(0, 0, 0, 0.1)"
+              >
+                Claim Your Free Trial
+              </button>
+              <div class="text-gray-500 text-[.7rem] text-center">
+                By clicking the button, you are agreeing to
+                <br class="lg:hidden" />our
+                <a href="#" class="text-red font-bold">Terms and Services</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
