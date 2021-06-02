@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Single Price Grid Component - Frontendmentor.io</title>
+
+    <link rel="modulepreload" href="./_app/start-81707232.js" />
+    <link rel="modulepreload" href="./_app/chunks/vendor-4e0cc74e.js" />
+    <link rel="modulepreload" href="./_app/layout.svelte-c61476a8.js" />
+    <link rel="modulepreload" href="./_app/pages/index.svelte-3a007203.js" />
+    <link rel="stylesheet" href="./_app/assets/start-0826e215.css" />
+    <link
+      rel="stylesheet"
+      href="./_app/assets/pages/index.svelte-8cbc7e15.css"
+    />
+
+    <script type="module">
+      import { start } from './_app/start-81707232.js';
+      start({
+        target: document.querySelector('#svelte'),
+        paths: { base: '', assets: '/.' },
+        session: {},
+        host: location.host,
+        route: true,
+        spa: false,
+        trailing_slash: 'never',
+        hydrate: {
+          status: 200,
+          error: null,
+          nodes: [
+            import('./_app/layout.svelte-c61476a8.js'),
+            import('./_app/pages/index.svelte-3a007203.js'),
+          ],
+          page: {
+            host: location.host, // TODO this is redundant
+            path: '/',
+            query: new URLSearchParams(''),
+            params: {},
+          },
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+      <main
+        class="flex flex-col px-[2rem] py-[4.5rem] bg-gray-light opacity-100 items-center lg:p-0 lg:items-center lg:min-h-screen lg:justify-center"
+      >
+        <div
+          class="rounded overflow-hidden flex flex-col shadow-xl lg:w-[636px]"
+        >
+          <div
+            class="bg-white p-[1.5rem] flex-flex-col space-y-[1.25rem] lg:p-[2.5rem] lg:space-y-[1rem]"
+          >
+            <div class="text-cyan font-bold text-[1.22rem] lg:text-[1.47rem]">
+              Join our community
+            </div>
+            <div class="text-yellow font-bold text-[.915rem] lg:text-[1.1rem]">
+              30-day, hassle-free money back guarantee
+            </div>
+            <div
+              class="text-gray-blue text-[.85rem] leading-[1.625rem] lg:text-[.98rem]"
+            >
+              Gain access to our full library of tutorials along with expert
+              code reviews. Perfect for any developers who are serious about
+              honing their skills
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row lg:w-full">
+            <div
+              class="bg-cyan text-white p-[1.5rem] flex flex-col lg:w-1/2 lg:p-[2.5rem]"
+            >
+              <div class="font-bold text-[1.1rem]">Monthly Subscription</div>
+              <div class="flex items-center space-x-[.75rem] mt-[.5rem]">
+                <div class="font-bold text-[2rem]">$29</div>
+                <div class="opacity-30">per month</div>
+              </div>
+              <div class="text-[.97rem]">
+                Full access for less than $1 a day
+              </div>
+              <a
+                href="#"
+                class="bg-yellow rounded shadow-xl p-[.75rem] text-center mt-[1.625rem]"
+                >Sign Up</a
+              >
+            </div>
+            <div
+              class="bg-cyan bg-opacity-75 text-white p-[1.5rem] flex flex-col lg:w-1/2 lg:p-[2.5rem]"
+            >
+              <div class="font-bold text-[1.1rem]">Why Us</div>
+              <div class="text-[.86rem] mt-[1rem]">
+                Tutorials by industry experts<br />
+                Peer &amp; expert code review<br />
+                Coding exercises<br />
+                Access to our Github reops<br />
+                Community forum<br />
+                Flashcard decks<br />
+                New videos every week
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
