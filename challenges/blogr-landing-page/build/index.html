@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blogr Landing Page - Frontendmentor.io</title>
+
+    <link rel="modulepreload" href="./_app/start-26479ba6.js" />
+    <link rel="modulepreload" href="./_app/chunks/vendor-fed5ddc0.js" />
+    <link rel="modulepreload" href="./_app/layout.svelte-76a7abe5.js" />
+    <link rel="modulepreload" href="./_app/pages/index.svelte-86667d4a.js" />
+    <link rel="stylesheet" href="./_app/assets/start-0826e215.css" />
+    <link
+      rel="stylesheet"
+      href="./_app/assets/pages/index.svelte-74b2a58a.css"
+    />
+
+    <script type="module">
+      import { start } from './_app/start-26479ba6.js';
+      start({
+        target: document.querySelector('#svelte'),
+        paths: { base: '', assets: '/.' },
+        session: {},
+        host: location.host,
+        route: true,
+        spa: false,
+        trailing_slash: 'never',
+        hydrate: {
+          status: 200,
+          error: null,
+          nodes: [
+            import('./_app/layout.svelte-76a7abe5.js'),
+            import('./_app/pages/index.svelte-86667d4a.js'),
+          ],
+          page: {
+            host: location.host, // TODO this is redundant
+            path: '/',
+            query: new URLSearchParams(''),
+            params: {},
+          },
+        },
+      });
+    </script>
+  </head>
+  <body>
+    <div id="svelte">
+      <main class="flex justify-center min-h-screen font-overpass">
+        <div class="flex flex-col items-center w-full">
+          <header
+            class="flex py-[3.5rem] justify-center w-full absolute top-0 left-0 z-10 lg:py-[4rem]"
+          >
+            <div class="w-full px-[1.5rem] lg:w-[1154px]">
+              <div class="flex justify-between">
+                <div class="flex items-center lg:space-x-[4rem] lg:flex-grow">
+                  <img src="./logo.svg" class="w-[82px] lg:w-[102px]" />
+                  <nav
+                    class="absolute top-0 left-0 transition duration-200 w-full mt-[8rem] px-[1.5rem] transform opacity-0 pointer-events-none -translate-y-4 lg:relative lg:mt-0 lg:opacity-100 lg:pointer-events-auto lg:p-0 lg:flex-grow lg:translate-y-0"
+                  >
+                    <div
+                      class="flex flex-col bg-white bg-opacity-100 items-center p-[2rem] rounded shadow-xl w-full space-y-[1.5rem] lg:bg-transparent lg:flex-row lg:shadow-none lg:space-y-0 lg:flex-grow lg:p-0 lg:justify-between"
+                    >
+                      <div
+                        class="flex flex-col space-y-[1.5rem] w-full lg:space-y-0 lg:flex-row lg:w-auto lg:space-x-[1.5rem]"
+                      >
+                        <a
+                          href="#"
+                          class="text-body font-semibold text-[1.15rem] items-center space-y-[1.5rem] justify-center flex flex-col w-full text-center hover:underline lg:text-white lg:space-y-0 lg:relative"
+                          ><div class="flex space-x-[.5rem] items-center">
+                            <div>Product</div>
+                            <div
+                              class="text-cta-light transform transition duration-200 lg:text-white rotate-0"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="10"
+                                height="7"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  d="M1 1l4 4 4-4"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div
+                            class="w-full rounded flex flex-col p-[2rem] bg-gray-200 space-y-[1rem] transform hidden lg:absolute lg:top-[2rem] lg:left-0 lg:-translate-x-0 lg:w-[12rem] lg:shadow-xl lg:bg-white"
+                          >
+                            <a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Overview</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Pricing</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Marketplace</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Features</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Integrations</a
+                            >
+                          </div> </a
+                        ><a
+                          href="#"
+                          class="text-body font-semibold text-[1.15rem] items-center space-y-[1.5rem] justify-center flex flex-col w-full text-center hover:underline lg:text-white lg:space-y-0 lg:relative"
+                          ><div class="flex space-x-[.5rem] items-center">
+                            <div>Company</div>
+                            <div
+                              class="text-cta-light transform transition duration-200 lg:text-white rotate-0"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="10"
+                                height="7"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  d="M1 1l4 4 4-4"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div
+                            class="w-full rounded flex flex-col p-[2rem] bg-gray-200 space-y-[1rem] transform hidden lg:absolute lg:top-[2rem] lg:left-0 lg:-translate-x-0 lg:w-[12rem] lg:shadow-xl lg:bg-white"
+                          >
+                            <a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >About</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Team</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Blog</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Careers</a
+                            >
+                          </div> </a
+                        ><a
+                          href="#"
+                          class="text-body font-semibold text-[1.15rem] items-center space-y-[1.5rem] justify-center flex flex-col w-full text-center hover:underline lg:text-white lg:space-y-0 lg:relative"
+                          ><div class="flex space-x-[.5rem] items-center">
+                            <div>Connect</div>
+                            <div
+                              class="text-cta-light transform transition duration-200 lg:text-white rotate-0"
+                            >
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="10"
+                                height="7"
+                              >
+                                <path
+                                  fill="none"
+                                  stroke="currentColor"
+                                  stroke-width="2"
+                                  d="M1 1l4 4 4-4"
+                                ></path>
+                              </svg>
+                            </div>
+                          </div>
+                          <div
+                            class="w-full rounded flex flex-col p-[2rem] bg-gray-200 space-y-[1rem] transform hidden lg:absolute lg:top-[2rem] lg:left-0 lg:-translate-x-0 lg:w-[12rem] lg:shadow-xl lg:bg-white"
+                          >
+                            <a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Contact</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >Newsletter</a
+                            ><a
+                              href="#"
+                              class="text-body font-semibold w-full text-[1rem] text-center lg:text-left"
+                              >LinkedIn</a
+                            >
+                          </div>
+                        </a>
+                      </div>
+                      <div class="w-full h-px bg-gray-200 lg:hidden"></div>
+                      <div
+                        class="flex flex-col w-[10rem] space-y-[.5rem] lg:w-[15rem] lg:flex-row lg:space-y-0 lg:space-x-[.5rem]"
+                      >
+                        <a
+                          href="#"
+                          class="rounded-full px-[1rem] py-[.7rem] font-ubuntu font-bold whitespace-nowrap w-full outline-none text-center transition duration-200 ring ring-white ring-opacity-0 bg-transparent text-body lg:text-white focus:ring-opacity-30"
+                          >Login</a
+                        >
+                        <a
+                          href="#"
+                          class="rounded-full px-[1rem] py-[.7rem] font-ubuntu font-bold whitespace-nowrap w-full outline-none text-center transition duration-200 ring ring-white ring-opacity-0 bg-gradient-to-r from-cta-gradient-1 to-cta-gradient-2 text-white lg:from-white lg:to-white lg:text-cta hover:bg-opacity-30 focus:ring-opacity-30"
+                          >Sign Up</a
+                        >
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <a href="#" class="w-[2rem] h-[2rem] relative lg:hidden"
+                  ><div
+                    class="w-full h-[2px] block bg-white absolute top-1/2 left-0 transition duration-200 transform -translate-y-1/2 mt-[-8px]"
+                  ></div>
+                  <div
+                    class="w-full h-[2px] block bg-white absolute top-1/2 left-0 transition duration-200 transform -translate-y-1/2 opacity-100"
+                  ></div>
+                  <div
+                    class="w-full h-[2px] block bg-white absolute top-1/2 left-0 transition duration-200 transform -translate-y-1/2 mt-[8px]"
+                  ></div
+                ></a>
+              </div>
+            </div>
+          </header>
+
+          <div
+            class="flex justify-center text-white w-full relative overflow-hidden rounded-bl-[6rem]"
+          >
+            <div class="w-full px-[1.5rem] lg:w-[1154px]">
+              <div
+                class="flex flex-col items-center pt-[12.35rem] pb-[9.75rem] lg:pt-[15.75rem]"
+              >
+                <div
+                  class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-cta-gradient-1 to-cta-gradient-2 -z-1"
+                ></div>
+                <div
+                  class="absolute top-0 left-0 w-full h-full -z-1"
+                  style="
+                    background-image: url(./bg-pattern-intro.svg);
+                    background-size: 350%;
+                    background-position: -20rem -15rem;
+                  "
+                ></div>
+                <div
+                  class="text-[2.1rem] leading-[2.95rem] text-center font-semibold lg:text-[3.75rem]"
+                >
+                  A modern publishing platform
+                </div>
+                <div
+                  class="text-center text-[1.125rem] leading-[1.45rem] mt-[.85rem] lg:text-[1.25rem] lg:mt-[1.75rem]"
+                >
+                  Grow your audience and build your online brand
+                </div>
+                <div
+                  class="flex space-x-[1rem] mt-[2.8rem] w-full lg:w-[20rem]"
+                >
+                  <a
+                    href="#"
+                    class="rounded-full px-[1rem] py-[.7rem] font-ubuntu font-bold whitespace-nowrap w-full outline-none text-center transition duration-200 ring ring-white ring-opacity-0 bg-white text-cta border border-white hover:bg-opacity-30 hover:text-white focus:ring-opacity-30"
+                    >Start for Free</a
+                  >
+                  <a
+                    href="#"
+                    class="rounded-full px-[1rem] py-[.7rem] font-ubuntu font-bold whitespace-nowrap w-full outline-none text-center transition duration-200 ring ring-white ring-opacity-0 bg-transparent text-white border border-white hover:bg-white hover:text-cta focus:ring-opacity-30"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center text-body py-[6.25rem] w-full lg:py-[9.5rem] lg:pb-[15rem] overflow-hidden lg:relative"
+          >
+            <img
+              src="./illustration-editor-desktop.svg"
+              class="hidden transform lg:block lg:absolute lg:left-[50%] lg:ml-[5rem] lg:w-[60rem] lg:top-[50%] lg:-translate-y-1/2"
+            />
+            <div class="w-full px-[1.5rem] lg:w-[1154px]">
+              <div
+                class="text-center font-semibold text-[1.625rem] lg:text-[2.35rem]"
+              >
+                Designed for the future
+              </div>
+              <img
+                src="./illustration-editor-mobile.svg"
+                class="py-[3rem] transform scale-[1.25] lg:absolute lg:hidden"
+              />
+              <div class="flex flex-col lg:w-[500px] lg:mt-[5rem]">
+                <div class="py-[1.35rem]">
+                  <div
+                    class="text-center font-semibold text-[1.75rem] leading-[2rem] lg:text-left"
+                  >
+                    Introducing an extensible editor
+                  </div>
+                  <div
+                    class="text-center text-[1.035rem] leading-[1.75rem] mt-[1rem] lg:text-left"
+                  >
+                    Blogr features an exceedingly intuitive interface which lets
+                    you focus on one thing: creating content. The editor
+                    supports management of multiple blogs and allows easy
+                    manipulation of embeds such as images, videos, and Markdown.
+                    Extensibility with plugins and themes provide easy ways to
+                    add functionality or change the looks of a blog.
+                  </div>
+                </div>
+                <div class="py-[1.35rem]">
+                  <div
+                    class="text-center font-semibold text-[1.75rem] leading-[2rem] lg:text-left"
+                  >
+                    Robust content management
+                  </div>
+                  <div
+                    class="text-center text-[1.035rem] leading-[1.75rem] mt-[1rem] lg:text-left"
+                  >
+                    Flexible content management enables users to easily move
+                    through posts. Increase the usability of your blog by adding
+                    customized categories, sections, format, or flow. With this
+                    functionality, you&#39;re in full control.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-center text-white mt-[13.75rem] relative pt-[14rem] pb-[8rem] w-full lg:mt-[0rem] lg:py-[8rem]"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-full bg-gradient-to-bl from-body-gradient-1 to-body-gradient-2 rounded-tr-[6rem] rounded-bl-[6rem] overflow-hidden -z-1"
+            >
+              <img
+                src="./bg-pattern-circles.svg"
+                class="absolute top-[-5rem] left-0 transform scale-[1.5] lg:top-[-30rem] lg:scale-[1] lg:left-[-15rem]"
+              />
+            </div>
+            <img
+              src="./illustration-phones.svg"
+              class="absolute top-[-12rem] transform right-[50%] mr-[5rem] w-full lg:w-auto lg:top-1/2 lg:-translate-y-1/2"
+            />
+            <div class="w-full px-[1.5rem] lg:w-[1154px]">
+              <div class="flex flex-col">
+                <div class="w-full lg:w-1/2 lg:self-end">
+                  <div
+                    class="text-[2.35rem] leading-[3.1rem] text-center font-semibold z-10 lg:text-left"
+                  >
+                    State of the Art Infrastructure
+                  </div>
+                  <div
+                    class="text-center mt-[1.5rem] leading-[1.75rem] lg:text-left"
+                  >
+                    With reliability and speed in mind, worldwide data centers
+                    provide the backbone for ultra-fast connectivity. This
+                    ensures your site will load instantly, no matter where your
+                    readers are, keeping your site competitive.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col text-body items-center py-[8rem] relative">
+            <img
+              src="./illustration-laptop-desktop.svg"
+              class="hidden absolute right-[50%] mr-[5rem] top-1/2 -translate-y-1/2 transform lg:block"
+            />
+            <div class="w-full px-[1.5rem] lg:w-[1154px]">
+              <div class="flex flex-col">
+                <img
+                  src="./illustration-laptop-mobile.svg"
+                  class="transform scale-[1.5] lg:hidden"
+                />
+                <div class="flex flex-col lg:w-1/2 lg:self-end">
+                  <div class="mt-[5rem] py-[1.35rem]">
+                    <div
+                      class="text-center font-semibold text-[1.75rem] leading-[2rem] lg:text-left"
+                    >
+                      Free, open, simple
+                    </div>
+                    <div
+                      class="text-center text-[1.035rem] leading-[1.75rem] mt-[1rem] lg:text-left"
+                    >
+                      Blogr is a free and open source application backed by a
+                      large community of helpful developers. It supports
+                      features such as code syntax highlighting, RSS feeds,
+                      social media integration, third-party commenting tools,
+                      and works seamlessly with Google Analytics. The
+                      architecture is clean and is relatively easy to learn.
+                    </div>
+                  </div>
+                  <div class="mt-[5rem] py-[1.35rem]">
+                    <div
+                      class="text-center font-semibold text-[1.75rem] leading-[2rem] lg:text-left"
+                    >
+                      Powerful tooling
+                    </div>
+                    <div
+                      class="text-center text-[1.035rem] leading-[1.75rem] mt-[1rem] lg:text-left"
+                    >
+                      Batteries included. We built a simple and straightforward
+                      CLI tool that makes customization and deployment a breeze,
+                      but capable of producing even the most complicated sites.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-footer-dark text-footer w-full rounded-tr-[6rem] items-center overflow-hidden py-[5rem]"
+          >
+            <div class="w-full px-[1.5rem] lg:w-[1154px]">
+              <div
+                class="flex flex-col w-full items-center space-y-[5rem] lg:grid lg:grid-cols-4 lg:space-y-0 lg:items-start"
+              >
+                <img src="./logo.svg" />
+                <div class="flex flex-col space-y-[2rem]">
+                  <div
+                    class="text-center w-full text-white font-semibold text-[1.15rem] lg:text-left"
+                  >
+                    Product
+                  </div>
+                  <div class="flex flex-col items-center w-full">
+                    <a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Overview</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Pricing</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Marketplace</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Features</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Integrations</a
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-col space-y-[2rem]">
+                  <div
+                    class="text-center w-full text-white font-semibold text-[1.15rem] lg:text-left"
+                  >
+                    Company
+                  </div>
+                  <div class="flex flex-col items-center w-full">
+                    <a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >About</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Team</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Blog</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Careers</a
+                    >
+                  </div>
+                </div>
+                <div class="flex flex-col space-y-[2rem]">
+                  <div
+                    class="text-center w-full text-white font-semibold text-[1.15rem] lg:text-left"
+                  >
+                    Connect
+                  </div>
+                  <div class="flex flex-col items-center w-full">
+                    <a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Contact</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >Newsletter</a
+                    ><a
+                      href="#"
+                      class="w-full text-center text-[1.15rem] py-[.25rem] hover:underline lg:text-left"
+                      >LinkedIn</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
