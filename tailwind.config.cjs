@@ -3,6 +3,12 @@ module.exports = {
   purge: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      colors:{
+
+      },
+      fontFamily:{
+        
+      },
       zIndex: {
         '-1': '-1',
       },
