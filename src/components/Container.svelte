@@ -1,0 +1,1 @@
+<div class="w-full px-[1.rem] lg:w-[1158px]"><slot/></div>
