@@ -7,8 +7,10 @@
   const clickHandler = e => {
     e.preventDefault();
 
-    $backer = title;
-    $show = !$show;
+    if ( left > 0 ) {
+      $backer = title;
+      $show = !$show;
+    }
   }
 
   // props
