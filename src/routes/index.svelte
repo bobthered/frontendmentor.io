@@ -7,9 +7,8 @@
   <title></title>
 </svelte:head>
 
-<div class="fixed top-0 left-0 w-screen h-screen -z-1" style="background-image:url(./design/mobile-design.jpg)"></div>
+<img src="./design/mobile-design.jpg" class="fixed top-0 left-0 w-[375px] h-[800px] opacity-20 -z-1 lg:hidden" />
+<img src="./design/desktop-design.jpg" class="fixed top-0 left-0 w-[1440] h-[800px] opacity-20 -z-1 hidden lg:block" />
 
 <main class="flex items-center justify-center min-h-screen">
-  <!-- container -->
-  <div class="flex flex-col items-center px-[2rem] py-[2rem]"></div>
 </main>
