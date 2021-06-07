@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Interactive Pricing Component - Frontendmentor.io</title>
+
+		
+
+		<link rel="modulepreload" href="./_app/start-6ac1fd83.js">
+		<link rel="modulepreload" href="./_app/chunks/vendor-d2d2dcf2.js">
+		<link rel="modulepreload" href="./_app/layout.svelte-69212c54.js">
+		<link rel="modulepreload" href="./_app/pages/index.svelte-3e3ccc1b.js">
+		<link rel="stylesheet" href="./_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="./_app/assets/pages/index.svelte-916be3b0.css">
+
+		<script type="module">
+			import { start } from "./_app/start-6ac1fd83.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("./_app/layout.svelte-69212c54.js"),
+						import("./_app/pages/index.svelte-3e3ccc1b.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+
+
+<main class="relative flex flex-col items-center py-[5.5rem] lg:py-[6.5rem]"><img src="./bg-pattern.svg" class="absolute top-0 left-0 h-[400px] object-cover -z-1 lg:w-full lg:h-auto">
+  <div class="w-full px-[1.5rem] lg:w-[580px]"><div class="relative flex flex-col text-blue items-center space-y-[.7rem]"><img src="./pattern-circles.svg" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -z-1">
+      <div class="text-[1.25rem] font-extrabold lg:text-[1.75rem]">Simple, traffic-based pricing
+      </div>
+      <div class="text-blue-light text-center text-[.83rem] lg:text-[.97rem]">Sign-up for our 30 day trial.<br class="lg:hidden">No credit card required
+      </div></div>
+    <div class="rounded-lg overflow-hidden bg-white shadow-xl p-[1.25rem] flex flex-col items-center lg:p-[2.5rem] mt-[5rem]"><div class="flex flex-col w-full space-y-[2.25rem] items-center"><div class="flex flex-col w-full items-center lg:flex-row lg:flex-wrap"><div class="uppercase text-blue-light font-extrabold text-[.9rem] text-center lg:w-1/2 lg:text-left lg:text-[1.08rem]">100K Pageviews
+</div>
+          <div class="relative w-full h-[.5rem] mt-[2.25rem] lg:order-3 lg:mt-[2.25rem]"><div class="rounded-full h-full w-full bg-gray-100 overflow-hidden"><div class="bg-green-light h-full rounded-full" style="width:50%"></div></div>
+  <input type="range" min="0" max="4" step="1" class="appearance-none outline-none bg-transparent w-full absolute top-0 left-0 rounded-full h-[.5rem] webkit-slider-thumb:bg-green webkit-slider-thumb:rounded-full webkit-slider-thumb:h-[2.5rem] webkit-slider-thumb:w-[2.5rem] webkit-slider-thumb:appearance-none webkit-slider-thumb:shadow-slider-thumb webkit-slider-thumb:bg-slider-thumb webkit-slider-thumb:bg-no-repeat webkit-slider-thumb:bg-center webkit-slider-thumb:cursor-pointer" value="2"></div>
+          <div class="flex space-x-[.5rem] items-center mt-[2.25rem] lg:order-2 lg:w-1/2 lg:justify-end lg:mt-0"><div class="text-[2rem] font-extrabold text-blue lg:text-[2.5rem]">$16.00</div>
+  <div class="text-blue-light">/ month</div></div></div>
+        <div class="flex space-x-[.5rem] text-blue-light items-center text-[.8rem]"><div class="whitespace-nowrap">Monthly Billing</div>
+  <label class="rounded-full p-[.25rem] cursor-pointer relative transition duration-200 pr-[1.25rem] bg-gray-200"><input type="checkbox" class="absolute opacity-0 w-0 h-0">
+  <div class="rounded-full w-[1rem] h-[1rem] bg-white transform transition duration-200 translate-x-[0%]"></div></label>
+  <div class="whitespace-nowrap">Yearly Billing</div>
+  <div class="rounded-full bg-red-light text-red text-[.75rem] font-extrabold px-[.5rem] py-[.25rem]">-25%</div></div>
+        <div class="w-full h-px bg-gray-200"></div>
+        <div class="flex flex-col w-full space-y-[2.25rem] items-center lg:flex-row lg:space-y-0 lg:justify-between"><div class="flex flex-col space-y-[.5rem] items-center lg:items-start"><div class="flex space-x-[.5rem] items-center"><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="w-[.5rem] h-[.5rem] text-green"><path d="M18 4.30358L6.44695 15.9242L0 9.43978L2.317 7.13615L6.44691 11.29L15.683 2L18 4.30358Z" fill="currentColor"></path></svg>
+      <div class="text-[.8rem] text-blue-light">Unlimited websites</div>
+    </div><div class="flex space-x-[.5rem] items-center"><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="w-[.5rem] h-[.5rem] text-green"><path d="M18 4.30358L6.44695 15.9242L0 9.43978L2.317 7.13615L6.44691 11.29L15.683 2L18 4.30358Z" fill="currentColor"></path></svg>
+      <div class="text-[.8rem] text-blue-light">100% data ownership</div>
+    </div><div class="flex space-x-[.5rem] items-center"><svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="w-[.5rem] h-[.5rem] text-green"><path d="M18 4.30358L6.44695 15.9242L0 9.43978L2.317 7.13615L6.44691 11.29L15.683 2L18 4.30358Z" fill="currentColor"></path></svg>
+      <div class="text-[.8rem] text-blue-light">Email reports</div>
+    </div></div>
+          <a href="#" class="rounded-full px-[2.5rem] py-[.75rem] text-[.9rem] bg-blue text-blue-lighter ring ring-blue ring-opacity-0 outline-none transition duration-200 hover:text-white focus:ring-opacity-30 undefined">Start my trial</a></div></div></div></div></main>
+
+
+
+	
+</div>
+	</body>
+</html>
