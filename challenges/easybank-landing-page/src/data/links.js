@@ -1,0 +1,1 @@
+export default ['Home', 'About', 'Contact', 'Blog', 'Careers'];
