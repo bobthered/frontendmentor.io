@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>REST Countries API with Color Theme Switcher - Frontendmentor.io</title>
+
+		
+
+		<link rel="modulepreload" href="./_app/start-43b88e87.js">
+		<link rel="modulepreload" href="./_app/chunks/vendor-b08e9467.js">
+		<link rel="modulepreload" href="./_app/pages/__layout.svelte-d41a9562.js">
+		<link rel="modulepreload" href="./_app/chunks/countriesStore-83b174d6.js">
+		<link rel="modulepreload" href="./_app/pages/index.svelte-be1f485a.js">
+		<link rel="stylesheet" href="./_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="./_app/assets/pages/__layout.svelte-21fe0ca6.css">
+
+		<script type="module">
+			import { start } from "./_app/start-43b88e87.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("./_app/pages/__layout.svelte-d41a9562.js"),
+						import("./_app/pages/index.svelte-be1f485a.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<main class="w-full "><div class="relative bg-light-bg dark:bg-dark-bg text-light-text dark:text-dark-text min-h-screen"><header class="w-full py-[29px] shadow-md bg-light-bg dark:bg-dark-bg z-20 lg:py-[22px]"><div class="w-full mx-auto px-[1rem] lg:w-[1312px]"><div class="flex justify-between items-center"><div class="font-extrabold text-[14px] lg:text-[24px]">Where in the world?</div>
+      <div class="flex cursor-pointer space-x-[8px]"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-[16px] lg:w-[20px]"><path d="M20.354 15.354C18.7172 16.0122 16.9231 16.1748 15.1946 15.8217C13.4662 15.4686 11.8796 14.6153 10.6322 13.3678C9.38472 12.1204 8.5314 10.5338 8.17828 8.80535C7.82515 7.0769 7.9878 5.28277 8.646 3.646C6.70771 4.42673 5.10136 5.85739 4.10233 7.69272C3.10329 9.52805 2.77379 11.6537 3.17031 13.7054C3.56684 15.757 4.66468 17.6069 6.27565 18.9378C7.88662 20.2687 9.91038 20.9977 12 21C13.7969 21.0001 15.5528 20.4624 17.0415 19.4562C18.5303 18.45 19.684 17.0213 20.354 15.354Z" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <div class="font-semibold text-[12px] lg:text-[16px]">Dark Mode</div></div></div></div></header>
+    <div class="py-[24px] lg:py-[48px]">
+
+<div class="w-full mx-auto px-[1rem] lg:w-[1312px]"><div class="flex flex-col space-y-[38px] lg:flex-row lg:space-y-0 lg:justify-between"><div class="relative text-light-input dark:text-dark-input lg:w-[480px]"><input type="text" class="ring ring-light-text ring-opacity-0 transition duration-200 outline-none rounded bg-transparent shadow-md w-full text-[12px] focus:ring-opacity-10 dark:ring-opacity-0 dark:ring-dark-text focus:dark:ring-opacity-10 dark:bg-dark lg:text-[14px] py-[16px] px-[24px] pl-[75px] lg:py-[18px]" placeholder="Search for a country...">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-[20px] h-[20px] absolute top-1/2 transform translate-y-[-50%] left-[31px]"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg></div>
+    <div class="w-[200px]"><div class="relative text-[12px] lg:text-[14px]"><div tabindex="0" class="cursor-pointer z-20 relative ring ring-light-text ring-opacity-0 transition duration-200 py-[16px] px-[24px] outline-none rounded bg-light shadow-md w-full focus:ring-opacity-10 dark:ring-opacity-0 dark:ring-dark-text focus:dark:ring-opacity-10 dark:bg-dark  lg:py-[18px]"><div class="flex space-x-[.5rem] items-center">Filter by Region</div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="absolute right-[16px] top-1/2 transition duration-200 transform translate-y-[-50%] w-[20px] h[20px] rotate-0" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></div>
+  <div class="z-20 rounded bg-light shadow-md w-full absolute top-[56px] transform transition duration-200 left-0 flex flex-col py-[10px] opacity-0 translate-y-[-16px] pointer-events-none dark:bg-dark lg:top-[62px]"><div class="cursor-pointer px-[24px] py-[3px] lg:py-[3.5px]">Africa</div><div class="cursor-pointer px-[24px] py-[3px] lg:py-[3.5px]">Americas</div><div class="cursor-pointer px-[24px] py-[3px] lg:py-[3.5px]">Asia</div><div class="cursor-pointer px-[24px] py-[3px] lg:py-[3.5px]">Europe</div><div class="cursor-pointer px-[24px] py-[3px] lg:py-[3.5px]">Oceania</div></div></div>
+<div class="fixed top-0 left-0 w-screen h-screen z-10 pointer-events-none"></div></div></div>
+  <div class="grid gap-[56px] px-[38px] mt-[32px] lg:grid-cols-4 lg:px-0 lg:gap-x-[72px] lg:gap-y-[90px] lg:mt-[48px]"></div></div></div></div></main>
+
+
+
+	
+</div>
+	</body>
+</html>
