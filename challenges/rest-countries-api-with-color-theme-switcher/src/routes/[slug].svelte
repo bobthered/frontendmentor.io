@@ -1,4 +1,6 @@
 <script context="module">
+  import { base } from '$app/paths';
+
   export async function load({page}) {
     const slug = page.params.slug;
     return {
@@ -52,7 +54,7 @@
 
 <Container>
   <div class="flex justify-start mt-[16px] px-[12px] lg:mt-[32px] lg:px-0">
-    <Button href="../"><ArrowNarrowLeft class="w-[20px] h-[20px]" /><div>Back</div></Button>
+    <Button href="{base}"><ArrowNarrowLeft class="w-[20px] h-[20px]" /><div>Back</div></Button>
   </div>
   {#if country !== undefined}
     <div class="flex flex-col mt-[64px] px-[12px] lg:px-0 lg:mt-[80px] lg:flex-row lg:justify-between lg:items-center">
@@ -82,7 +84,7 @@
               None
             {:else}
               {#each borders as {name}}
-                <Button href="../{name.toLowerCase().replace(/\s/g,'-')}" class="ml-[8px] mb-[8px] whitespace-no-wrap" size="small">{name}</Button>
+                <Button href="{base}/{name.toLowerCase().replace(/\s/g,'-')}" class="ml-[8px] mb-[8px] whitespace-no-wrap" size="small">{name}</Button>
               {/each}
             {/if}
           </div>
