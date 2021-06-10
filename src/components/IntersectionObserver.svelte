@@ -2,14 +2,16 @@
   // _imports
   import { onMount } from "svelte";
 
-  // props
+  // props ( external )
   export let bottom = 0;
-  let container;
-  let intersecting = false;
   export let left = 0;
   export let once = false;
   export let right = 0;
   export let top = 0;
+  
+  // props ( private )
+  let container;
+  let intersecting = false;
 
   onMount(() => {
     if (typeof IntersectionObserver !== "undefined") {
