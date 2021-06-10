@@ -10,7 +10,7 @@ const config = {
   kit: {
     adapter: adapter(),
     paths:{
-      base: '/challenges/rest-countries-api-with-color-theme-switcher/build/'
+      base: '/frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher/build/'
     },
     target: '#svelte',
     vite: {
