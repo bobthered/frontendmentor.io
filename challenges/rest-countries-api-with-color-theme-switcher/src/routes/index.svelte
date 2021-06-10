@@ -1,3 +1,7 @@
+<script context="module">
+  import { base } from '$app/paths';
+</script>
+
 <script>
   // components
   import Card from "../components/Card.svelte";
@@ -49,7 +53,7 @@
     class="grid gap-[56px] px-[38px] mt-[32px] lg:grid-cols-4 lg:px-0 lg:gap-x-[72px] lg:gap-y-[90px] lg:mt-[48px]">
     {#each filteredCountries as { flag: src, name, population, region: countryRegion, capital }}
       <Card>
-        <a href="./{name.toLowerCase().replace(/\s/g, '-')}">
+        <a href="{base}/{name.toLowerCase().replace(/\s/g, '-')}">
           <img {src} />
           <div class="flex flex-col p-[25px] text-[14px] leading-[24px]">
             <div class="font-bold text-[18px] leading-[22px]">{name}</div>
