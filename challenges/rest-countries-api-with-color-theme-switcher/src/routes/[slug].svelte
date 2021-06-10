@@ -44,7 +44,6 @@
 
   // store
   import countries from './countriesStore.js';
-  import darkMode from '../components/Darkmode/store';
 </script>
 
 <svelte:head>

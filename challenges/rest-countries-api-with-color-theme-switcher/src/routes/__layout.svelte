@@ -1,6 +1,6 @@
 <script>
   // _imports
-  import { onMount, setContext } from 'svelte';
+  import { onMount } from 'svelte';
 
   // components
   import Header from '../components/Header.svelte';
