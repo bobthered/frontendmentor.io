@@ -1,0 +1,1 @@
+<div class="w-full mx-auto px-[32px] lg:w-[1162px] {$$props.class}"><slot/></div>
