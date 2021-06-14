@@ -1,1 +1,1 @@
-<div class="w-full mx-auto px-[1.5rem] lg:w-[1158px]"><slot/></div>
+<div class="w-full mx-auto px-[1.5rem] lg:w-[1158px] {$$props.class !== undefined ? $$props.class :''}"><slot/></div>

@@ -23,4 +23,4 @@
 
 </script>
 
-<img {src} {alt} class="{transition} {transitionClasses} {$$props.class}" bind:this={thisImage} />
+<img {src} {alt} class="{transition} {transitionClasses} {$$props.class !== undefined ? $$props.class :''}" bind:this={thisImage} />

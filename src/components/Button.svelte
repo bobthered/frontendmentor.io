@@ -10,4 +10,4 @@
   $: themeClasses = theme === 'default' ? '' : '';
 </script>
 
-<a {href} on:click class="ring ring-1 ring-red-500 text-center {padding} {rounded} {shadow} {themeClasses} {$$props.class}"><slot/></a>
+<a {href} on:click class="ring ring-1 ring-red-500 text-center {padding} {rounded} {shadow} {themeClasses} {$$props.class !== undefined ? $$props.class :''}"><slot/></a>

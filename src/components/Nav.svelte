@@ -5,7 +5,8 @@
   // handlers
   const toggleMenu = () => show = !show;
 
-  let show = false;
+  // props ( external )
+  export let show = false;
 </script>
 
 <div on:click={toggleMenu} class="relative cursor-pointer w-[24px] h-[24px] lg:hidden">
