@@ -9,6 +9,10 @@ const config = {
   ],
   kit: {
     adapter: adapter(),
+    paths:{
+      assets:'/frontendmentor.io/challenges/REPLACE/build',
+      base:'/frontendmentor.io/challenges/REPLACE/build'
+    },
     target: '#svelte',
     vite: {
       resolve: {
