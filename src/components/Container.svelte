@@ -1,1 +1,8 @@
-<div class="w-full mx-auto px-[1.5rem] lg:w-[1158px] {$$props.class !== undefined ? $$props.class :''}"><slot/></div>
+<script>
+  // props ( external )
+  export let margin = 'mx-auto';
+  export let padding = 'px-[24px]';
+  export let width = 'w-full lg:w-[1158px]';
+</script>
+
+<div class='{margin} {padding} {width} {$$props.class !== undefined ? $$props.class :''}'><slot/></div>
