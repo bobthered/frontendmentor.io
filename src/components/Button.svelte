@@ -1,22 +1,25 @@
 <script>
   // props ( external )
-  export let fontWeight = 'font-normal';
+  export let bgOpacity  = 'bg-opacity-100 hover:bg-opacity-70';
+  export let boxShadow  = '';
+  export let fontWeight = 'font-medium';
   export let href       = '#';
-  export let outline    = 'outline-none';
-  export let padding    = 'px-[2rem] py-[10px]'
+  export let outline    = 'outline-none focus:outline-none';
+  export let padding    = 'px-[30px] py-[11px]'
   export let ring       = 'ring ring-opacity-0 focus:ring-opacity-30';
   export let rounded    = 'rounded-full';
-  export let shadow     = '';
   export let textAlign  = 'text-center';
+  export let textColor  = '';
+  export let textSize   = '';
   export let theme      = 'default';
   export let transition = 'transition duration-200';
-  export let type       = 'link';
+  export let type       = '';
   export let style      = '';
   export let whitespace = 'whitespace-nowrap';
 
   // props ( dynamic )
-  $: themeClasses = theme === 'default' ? 'ring-opacity-30' : '';
-  $: classes = `${fontWeight} ${outline} ${padding} ${ring} ${rounded} ${shadow} ${textAlign} ${themeClasses} ${transition} ${whitespace-nowrap} ${$$props.class !== undefined ? $$props.class : ''}`;
+  $: themeClasses = theme === 'default' ? 'bg-transparent' : '';
+  $: classes = `${bgOpacity} ${boxShadow} ${fontWeight} ${outline} ${padding} ${ring} ${rounded} ${textAlign} ${textColor} ${textSize} ${themeClasses} ${transition} ${whitespace} ${$$props.class !== undefined ? $$props.class : ''}`;
 </script>
 
 {#if type === 'link'}
