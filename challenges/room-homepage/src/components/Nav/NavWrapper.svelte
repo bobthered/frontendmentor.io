@@ -33,6 +33,6 @@
 
 <div class={classes}>
   {#each routes as title, i}
-    <Link bind:show {toggleMenu} title={title.replace(/home/g, '')} {i} />
+    <Link bind:show {toggleMenu} {title} {i} />
   {/each}
 </div>

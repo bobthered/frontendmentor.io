@@ -38,4 +38,4 @@
   $: classes         = `${fontWeight} ${lineHeight} ${padding} ${opacity} ${rounded} ${textAlign} ${textSize} ${textColor} ${transition} ${transitionDelay} ${transform} ${width} ${$$props.class !== undefined ? $$props.class : ''}`;
 </script>
 
-<a on:click|preventDefault={toggleMenu} href='{base}/{title.toLowerCase().replace(/\s/g,'-')}' class={classes}>{title}</a>
+<a on:click|preventDefault={toggleMenu} href='{base}/{title.toLowerCase().replace(/\s/g,'-').replace(/home/g,'')}' class={classes}>{title}</a>
