@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="alternate icon" href="./icon-16x16.png" />
+    <link rel="apple-touch-icon" href="./icon-apple-touch.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').then(function () {
+          console.log('Service Worker Registered');
+        });
+      }
+    </script>
+    <title>IP Address Tracker - Frontendmentor.io</title><meta name="description" content="IP Address Tracker" data-svelte="svelte-1u03j45"><meta name="theme-color" content="#ffffff" data-svelte="svelte-1u03j45">
+
+		
+
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/ip-address-tracker/build/_app/start-d657f0bd.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/ip-address-tracker/build/_app/chunks/vendor-b67b3b2a.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/ip-address-tracker/build/_app/chunks/preload-helper-9f12a5fd.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/ip-address-tracker/build/_app/pages/__layout.svelte-f6efc917.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/ip-address-tracker/build/_app/pages/index.svelte-412713b0.js">
+		<link rel="stylesheet" href="/frontendmentor.io/challenges/ip-address-tracker/build/_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/frontendmentor.io/challenges/ip-address-tracker/build/_app/assets/pages/__layout.svelte-155e76d5.css">
+
+		<script type="module">
+			import { start } from "/frontendmentor.io/challenges/ip-address-tracker/build/_app/start-d657f0bd.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/frontendmentor.io/challenges/ip-address-tracker/build","assets":"/frontendmentor.io/challenges/ip-address-tracker/build"},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/frontendmentor.io/challenges/ip-address-tracker/build/_app/pages/__layout.svelte-f6efc917.js"),
+						import("/frontendmentor.io/challenges/ip-address-tracker/build/_app/pages/index.svelte-412713b0.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<main class="relative flex flex-col text-[18px] text-gray-900 min-h-screen h-screen">
+
+<header class="flex w-full top-0 left-0 relative py-[20px] lg:py-[24px]"><img alt="Header Background" src="./pattern-bg.png" class="absolute top-0 left-0 w-full h-full -z-1 object-cover">
+  <div class="mx-auto px-[24px] w-full lg:w-[1158px] "><div class="flex flex-col items-center justify-center"><div class="text-[26px] text-white text-center font-medium lg:text-[31.5px]">IP Address Tracker</div>
+      </div></div></header>
+<section class=" relative h-[0px] z-500"><div class="mx-auto px-[24px] w-full lg:w-[1158px] "></div></section>
+<section class="  flex-grow"><div class="h-full"></div></section></main>
+
+
+
+	
+</div>
+  </body>
+</html>
