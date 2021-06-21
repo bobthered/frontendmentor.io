@@ -9,9 +9,9 @@
 
   // methods
   const getIPAddress = async () => {
-    const response = await fetch('./getIPAddress');
+    const response = await fetch('https://api.ipify.org?format=json');
     const data = await response.json();
-    ipAddress = data.ipAddress;
+    ipAddress = data.ip;
   }
   const getStats = async () => {
     const response = await fetch(`https://geo.ipify.org/api/v1?apiKey=at_3jXsO93HdgiuhAhMMQfeZQupdsHaO&ipAddress=${ipAddress}`);
