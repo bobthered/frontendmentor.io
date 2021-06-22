@@ -1,6 +1,6 @@
 <script>
   // _imports
-  import routes from '../../data/routes';
+  import routes from '$data/routes';
 
   // components
   import Link from './Link.svelte';

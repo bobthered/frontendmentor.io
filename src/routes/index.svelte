@@ -1,6 +1,6 @@
 <script>
-  // component
-  import Container from '../components/Container.svelte';
+  // sections
+  // import Hero from '$sections/Hero.svelte';
 </script>
 
 <svelte:head>
