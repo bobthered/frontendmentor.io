@@ -7,7 +7,8 @@
 </script>
 
 <svelte:head>
-  <meta name="theme-color" content="#f25f3a" />
+  <meta name="description" content="" />
+  <meta name="theme-color" content="#fff" />
 </svelte:head>
 
 <main class="relative flex flex-col">
