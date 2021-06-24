@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="alternate icon" href="./icon-16x16.png" />
+    <link rel="apple-touch-icon" href="./icon-apple-touch.png" />
+    <link rel="manifest" href="./manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').then(function () {
+          console.log('Service Worker Registered');
+        });
+      }
+    </script>
+    <title>Calculator App - Frontendmentor.io</title><meta name="description" content="Calculator App" data-svelte="svelte-1pjcgat"><meta name="theme-color" content="#fff" data-svelte="svelte-1pjcgat">
+
+		
+
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/calculator-app/build/_app/start-fbaa97c9.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/calculator-app/build/_app/chunks/vendor-a6896ab2.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/calculator-app/build/_app/pages/__layout.svelte-9cbe2017.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/calculator-app/build/_app/chunks/theme-00aa93df.js">
+		<link rel="modulepreload" href="/frontendmentor.io/challenges/calculator-app/build/_app/pages/index.svelte-6e1000b4.js">
+		<link rel="stylesheet" href="/frontendmentor.io/challenges/calculator-app/build/_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/frontendmentor.io/challenges/calculator-app/build/_app/assets/pages/__layout.svelte-3f6f29e7.css">
+
+		<script type="module">
+			import { start } from "/frontendmentor.io/challenges/calculator-app/build/_app/start-fbaa97c9.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/frontendmentor.io/challenges/calculator-app/build","assets":"/frontendmentor.io/challenges/calculator-app/build"},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/frontendmentor.io/challenges/calculator-app/build/_app/pages/__layout.svelte-9cbe2017.js"),
+						import("/frontendmentor.io/challenges/calculator-app/build/_app/pages/index.svelte-6e1000b4.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+  </head>
+  <body>
+    <div id="svelte">
+
+
+
+
+<main class="font-bold "><div class="bg-skin-bg py-[24px] min-h-screen flex flex-col text-skin-text-primary">
+
+<header class="flex w-full justify-center z-20 text-text-primary"><div class="mx-auto px-[24px] w-full lg:w-[586px] "><div class="flex justify-between items-center"><div class="text-[31px]">calc</div>
+      <div class="flex items-end text-[12px] space-x-[27px]"><div class="uppercase" style="letter-spacing:.1em">Theme</div>
+        <div class="flex flex-col space-y-[4px]"><div class="flex justify-center"><div class="flex-grow text-center">1</div><div class="flex-grow text-center">2</div><div class="flex-grow text-center">3</div></div>
+          <div class="flex relative rounded-full"><div class="absolute -z-1 top-0 left-0 rounded-full bg-skin-toggle-bg w-full h-full"></div>
+            <div class="absolute -z-1 transform transition duration-200 top-[3px] left-[3px] p-[8px] rounded-full bg-skin-equal-bg translate-x-[44px]"></div>
+            <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-[11px]  rounded-full text-center   bg-transparent transition duration-200 whitespace-nowrap " style=""></button><button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-[11px]  rounded-full text-center   bg-transparent transition duration-200 whitespace-nowrap " style=""></button><button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-[11px]  rounded-full text-center   bg-transparent transition duration-200 whitespace-nowrap " style=""></button></div></div></div></div></div></header>
+<div class="mt-[33px]"><div class="mx-auto px-[24px] w-full lg:w-[586px] "><div class="bg-skin-screen-bg rounded-lg p-[20px] px-[24px] text-right text-[32px]" style="letter-spacing:-.015em">0</div></div></div>
+<div class="flex-grow flex mt-[28px]"><div class="mx-auto px-[24px] w-full lg:w-[586px] flex"><div class="rounded-lg relative overflow-hidden p-[24px] grid grid-cols-4 grid-rows-5 flex-grow gap-x-[12px] gap-y-[8px]"><div class="absolute top-0 left-0 w-full h-full bg-skin-toggle-bg"></div>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">7</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">8</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">9</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys-secondary text-[16px] " style=""><div class="absolute bottom-0 bg-skin-key-secondary-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-secondary-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">DEL</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">4</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">5</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">6</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">+</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">1</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">2</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">3</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">-</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">.</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">0</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">/</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys text-[30px] " style=""><div class="absolute bottom-0 bg-skin-key-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">X</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys-secondary text-[16px] col-span-2" style=""><div class="absolute bottom-0 bg-skin-key-secondary-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-key-secondary-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">RESET</div></div></button>
+      <button class="bg-opacity-100 hover:bg-opacity-70  font-medium outline-none focus:outline-none p-0  rounded text-center   bg-transparent transition duration-200 whitespace-nowrap overflow-hidden relative flex flex-grow text-skin-text-keys-tertiary text-[16px] col-span-2" style=""><div class="absolute bottom-0 bg-skin-equal-shadow left-0 w-full h-[8px]"></div>
+  <div class="pb-[4px] flex flex-grow h-full"><div class="bg-skin-equal-bg rounded flex flex-grow items-center justify-center transform transition duration-200 ">=</div></div></button></div></div></div></div></main>
+
+
+
+	
+</div>
+  </body>
+</html>

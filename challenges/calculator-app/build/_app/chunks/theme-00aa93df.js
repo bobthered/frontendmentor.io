@@ -1,0 +1,1 @@
+import{C as e}from"./vendor-a6896ab2.js";const t=((t,o=[])=>{let r;r="undefined"!=typeof localStorage?JSON.parse(localStorage.getItem(t)||JSON.stringify(o)):[];const a=e(r);return"undefined"!=typeof localStorage&&a.subscribe((e=>{localStorage.setItem(t,JSON.stringify(e))})),a})("theme","theme-1");export{t};
