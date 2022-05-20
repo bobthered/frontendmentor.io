@@ -1,4 +1,7 @@
 <script>
+	// imports
+	import { base } from '$app/paths';
+
 	// handlers
 	const submitHandler = () => {
 		if (rating !== undefined) submitted = !submitted;
@@ -24,7 +27,7 @@
 			<div class="rounded-full bg-[#262F38] p-[.75rem] lg:p-[1rem]">
 				<img
 					class="w-[.875rem] h-[.875rem] select-none lg:w-[1rem] lg:h-[1rem]"
-					src="/icon-star.svg"
+					src="{base}/icon-star.svg"
 					alt="Star"
 				/>
 			</div>
@@ -71,7 +74,7 @@
 				: 'rotate-y-[360deg]'}"
 		>
 			<img
-				src="/illustration-thank-you.svg"
+				src="{base}/illustration-thank-you.svg"
 				class="select-none w-[145px] lg:w-[160px]"
 				alt="Thank You"
 			/>

@@ -7,6 +7,12 @@ const config = {
 		adapter: adapter({
 			fallback: 'index.html'
 		}),
+		paths: {
+			base: '/frontendmentor.io/challenges/interactive-rating-component/build'
+		},
+		prerender: {
+			default: true
+		},
 		vite: {
 			optimizeDeps: {
 				include: ['hashlru']
