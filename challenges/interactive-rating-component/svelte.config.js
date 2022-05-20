@@ -4,11 +4,15 @@ import adapter from '@sveltejs/adapter-static';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
-		adapter: adapter({
-			fallback: 'index.html'
-		}),
+		adapter: adapter(),
+		browser: {
+			hydrate: false
+		},
 		paths: {
-			base: '/frontendmentor.io/challenges/interactive-rating-component/build'
+			base:
+				process.env.NODE_ENV === 'development'
+					? ''
+					: '/frontendmentor.io/challenges/interactive-rating-component/build'
 		},
 		prerender: {
 			default: true
