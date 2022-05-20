@@ -5,9 +5,6 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	kit: {
 		adapter: adapter(),
-		browser: {
-			hydrate: false
-		},
 		paths: {
 			base:
 				process.env.NODE_ENV === 'development'
